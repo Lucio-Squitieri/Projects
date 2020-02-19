@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/bRosso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" pallina rossa"
+        android:onClick="Rossa"
+        />
+    <Button
+        android:id="@+id/bBlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pallina blu"
+        android:onClick="Blu"
+        android:layout_toRightOf="@id/bRosso"
+        />
+    <Button
+        android:id="@+id/bVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pallina verde"
+        android:onClick="Verde"
+        android:layout_toRightOf="@id/bBlu"
+        />
+    <TextView
+        android:id="@+id/pallinaR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@id/bRosso"
+        android:paddingLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/pallinaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@id/bBlu"
+        android:layout_toRightOf="@id/pallinaR"
+        android:paddingLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/pallinaV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_below="@id/bVerde"
+        android:layout_toRightOf="@id/pallinaB"
+        android:paddingLeft="100dp"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/scelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pallinaR"
+        android:paddingTop="200dp">
+
+        <RadioButton
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cestino 1:"
+            />
+        <RadioButton
+            android:id="@+id/s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cestino2:"
+            />
+        <RadioButton
+            android:id="@+id/s3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Cestino 3:"
+            />
+
+        </RadioGroup>
+
+
+</RelativeLayout>
